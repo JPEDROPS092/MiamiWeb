@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Negociação de Dívida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="godotocat.png" alt="Sua imagem">
+    <h1>Formulário de Negociação de Dívida</h1>
+    <form id="form">
+      <!-- Informações de Identificação -->
+      <h2>Informações de Identificação</h2>
+      <div class="form-group">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+      </div>
+      <div class="form-group">
+        <label for="dataNascimento">Data de nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+      </div>
+      <div class="form-group">
+        <label for="contato">Contato:</label>
+        <input type="text" id="contato" name="contato" required>
+      </div>
+
+      <!-- Detalhes da Dívida -->
+      <h2>Detalhes da Dívida</h2>
+      <div class="form-group">
+        <label for="valorTotal">Valor total da dívida:</label>
+        <input type="number" id="valorTotal" name="valorTotal" required>
+      </div>
+      <div class="form-group">
+        <label for="dataVencimento">Data de vencimento original:</label>
+        <input type="date" id="dataVencimento" name="dataVencimento" required>
+      </div>
+      <div class="form-group">
+        <label for="historicoPagamentos">Histórico de pagamentos:</label>
+        <textarea id="historicoPagamentos" name="historicoPagamentos" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="nomeCredor">Nome do credor:</label>
+        <input type="text" id="nomeCredor" name="nomeCredor" required>
+      </div>
+
+      <!-- Situação Financeira do Cliente -->
+      <h2>Situação Financeira do Cliente</h2>
+      <div class="form-group">
+        <label for="rendaMensal">Renda mensal:</label>
+        <input type="number" id="rendaMensal" name="rendaMensal" required>
+      </div>
+      <div class="form-group">
+        <label for="outrasDividas">Outras dívidas:</label>
+        <textarea id="outrasDividas" name="outrasDividas" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="bens">Bens:</label>
+        <textarea id="bens" name="bens" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="patrimonio">Patrimônio:</label>
+        <textarea id="patrimonio" name="patrimonio" required></textarea>
+      </div>
+
+      <!-- Proposta de Pagamento -->
+      <h2>Proposta de Pagamento</h2>
+      <div class="form-group">
+        <label for="valorParcela">Valor da parcela:</label>
+        <input type="number" id="valorParcela" name="valorParcela" required>
+      </div>
+      <div class="form-group">
+        <label for="formaPagamento">Forma de pagamento:</label>
+        <select id="formaPagamento" name="formaPagamento" required>
+          <option value="">Selecione</option>
+          <option value="boleto">Boleto</option>
+          <option value="cartao">Cartão</option>
+          <option value="dinheiro">Dinheiro</option>
+        </select>
+      </div>
+      <div class="form-group">
+
+
+      <div class="form-group">
+        <label for="frequencia">Frequência:</label>
+        <select id="frequencia" name="frequencia" required>
+          <option value="">Selecione</option>
+          <option value="mensal">Mensal</option>
+          <option value="trimestral">Trimestral</option>
+          <option value="semestral">Semestral</option>
+        </select>
+      </div>
+
+      <!-- Observações -->
+      <h2>Observações</h2>
+      <div class="form-group">
+        <textarea id="observacoes" name="observacoes"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
