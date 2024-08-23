@@ -88,9 +88,6 @@
         </select>
       </div>
       <div class="form-group">
-
-
-      <div class="form-group">
         <label for="frequencia">Frequência:</label>
         <select id="frequencia" name="frequencia" required>
           <option value="">Selecione</option>
@@ -109,6 +106,14 @@
       <button type="submit">Enviar</button>
     </form>
   </div>
+
+  <!-- Integração com Langflow -->
+  <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.4/dist/build/static/js/bundle.min.js"></script>
+  <langflow-chat
+    window_title="Document QA"
+    flow_id="14a71524-ad4a-44ed-ae2c-7193a1487b3a"
+    host_url="http://localhost:7863"
+  ></langflow-chat>
 
   <script src="script.js"></script>
 </body>
